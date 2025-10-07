@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/fontsizetitle"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/register"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="@dimen/fontsizecontent"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/user" />
+    <EditText
+        android:id="@+id/ETXUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin1"
+        android:hint="@string/selectusername"
+        android:background="@drawable/roundededittext"
+        android:padding="@dimen/padding1"
+        android:textColorHint="@color/blue"
+        />
+    <Button
+        android:id="@+id/BTNLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/login"
+        android:textSize="@dimen/fontsizebutton"
+        android:background="@drawable/roundbutton"
+        />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SurMarket</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="user">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="passwordrecover">Recuperar Contraseña</string>
+    <string name="registerhere">Registrate Aquí</string>
+    <string name="register">Registrarse</string>
+    <string name="selectusername">Elige un nombre de Usuario</string>
+</resources>

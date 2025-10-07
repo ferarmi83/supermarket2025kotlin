@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentLogin">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/fontsizetitle"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/login" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="@dimen/fontsizecontent"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/user" />
+    <EditText
+        android:id="@+id/ETXUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="@dimen/fontsizecontent"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/password" />
+    <EditText
+        android:id="@+id/ETXPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin1"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/TXVPasswordRecover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="@dimen/fontsizecontent"
+        android:textColor="@color/blue"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/passwordrecover"
+        android:clickable="true"/>
+    <Button
+        android:id="@+id/BTNLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/login"
+        android:textSize="@dimen/fontsizebutton"
+        />
+    <Button
+        android:id="@+id/BTNRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin1"
+        android:layout_marginRight="@dimen/margin1"
+        android:text="@string/registerhere"
+        android:textSize="@dimen/fontsizebutton"
+        />
+</LinearLayout>
