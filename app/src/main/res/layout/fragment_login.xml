@@ -26,8 +26,13 @@
         android:id="@+id/ETXUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
         android:layout_marginLeft="@dimen/margin1"
         android:layout_marginRight="@dimen/margin1"
+        android:hint="@string/insertusername"
+        android:background="@drawable/roundededittext"
+        android:padding="@dimen/padding1"
+        android:textColorHint="@color/blue"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -41,8 +46,13 @@
         android:id="@+id/ETXPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
         android:layout_marginLeft="@dimen/margin1"
         android:layout_marginRight="@dimen/margin1"
+        android:hint="@string/insertpassword"
+        android:background="@drawable/roundededittext"
+        android:padding="@dimen/padding1"
+        android:textColorHint="@color/blue"
         android:inputType="textPassword"
         />
     <TextView
@@ -65,6 +75,8 @@
         android:layout_marginTop="@dimen/margin1"
         android:text="@string/login"
         android:textSize="@dimen/fontsizebutton"
+        android:background="@drawable/roundbutton"
+        android:textColorHint="@color/blue"
         />
     <Button
         android:id="@+id/BTNRegister"
@@ -72,7 +84,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margin1"
         android:layout_marginRight="@dimen/margin1"
+        android:layout_marginTop="@dimen/padding1"
         android:text="@string/registerhere"
         android:textSize="@dimen/fontsizebutton"
+        android:background="@drawable/roundbutton"
         />
 </LinearLayout>

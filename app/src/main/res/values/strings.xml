@@ -9,4 +9,6 @@
     <string name="registerhere">Registrate Aquí</string>
     <string name="register">Registrarse</string>
     <string name="selectusername">Elige un nombre de Usuario</string>
+    <string name="insertusername">Escribe tu nombre de usuario</string>
+    <string name="insertpassword">Escribe tu contraseña</string>
 </resources>
