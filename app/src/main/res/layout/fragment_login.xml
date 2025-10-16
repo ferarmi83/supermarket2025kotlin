@@ -87,6 +87,7 @@
         android:layout_marginTop="@dimen/padding1"
         android:text="@string/registerhere"
         android:textSize="@dimen/fontsizebutton"
-        android:background="@drawable/roundbutton"
+        android:textColor="@color/black"
+        android:background="@drawable/roundededittext"
         />
 </LinearLayout>
