@@ -11,4 +11,9 @@
     <string name="selectusername">Elige un nombre de Usuario</string>
     <string name="insertusername">Escribe tu nombre de usuario</string>
     <string name="insertpassword">Escribe tu contraseña</string>
+    <string name="validationError">Error de validación</string>
+    <string name="userError">Error de usuario</string>
+    <string name="PasswordError">Error de contraseña</string>
+    <string name="welcome">Bienvenido a SuperMarket</string>
+    <string name="wrongUserOrPassword">Usuario o Contraseña incorrecta</string>
 </resources>

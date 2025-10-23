@@ -5,29 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FragmentLogin.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FragmentLogin : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    //Variables de los controles
+    private lateinit var ETXUser: EditText
+    private lateinit var ETXPassword : EditText
+    private lateinit var TXVPasswordRecover: TextView
+    private lateinit var BTNLogin : Button
+    private lateinit var BTNRegister : Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,23 +26,72 @@ class FragmentLogin : Fragment() {
         return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment FragmentLogin.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FragmentLogin().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initializeViews(view)
+        configureEvents()
+    }
+
+    private fun initializeViews(view: View) {
+        ETXUser = view.findViewById(R.id.ETXUser)
+        ETXPassword = view.findViewById(R.id.ETXPassword)
+        TXVPasswordRecover = view.findViewById(R.id.TXVPasswordRecover)
+        BTNLogin = view.findViewById(R.id.BTNLogin)
+        BTNRegister = view.findViewById(R.id.BTNRegister)
+    }
+
+    private fun configureEvents() {
+        TXVPasswordRecover.setOnClickListener(){
+
+        }
+        BTNLogin.setOnClickListener(){
+            initSession()
+        }
+        BTNRegister.setOnClickListener(){
+
+        }
+    }
+
+    private fun initSession() {
+        var us = ETXUser.text.toString()
+        var pw = ETXPassword.text.toString()
+        if (!validateCredentials(us,pw))
+        {
+            Toast.makeText(context,R.string.validationError, Toast.LENGTH_SHORT)
+        }
+        else if (verifyCredentials(us,pw))
+        {
+            Toast.makeText(context,R.string.welcome, Toast.LENGTH_SHORT)
+        }
+        else
+        {
+            Toast.makeText(context,R.string.wrongUserOrPassword, Toast.LENGTH_SHORT)
+        }
+    }
+
+    private fun validateCredentials(us:String,pw:String): Boolean{
+        var isCorrect= true
+        if (us.isEmpty())
+        {
+            ETXUser.error = R.string.userError.toString()
+            isCorrect = false
+        }
+        else
+        {
+            ETXUser.error = null
+        }
+        if (pw.isEmpty())
+        {
+            ETXPassword.error = R.string.PasswordError.toString()
+            isCorrect = false
+        }
+        else
+        {
+            ETXPassword.error = null
+        }
+        return isCorrect
+    }
+    private fun verifyCredentials(us:String,pw:String): Boolean {
+        return us=="admin" && pw=="123456"
     }
 }
