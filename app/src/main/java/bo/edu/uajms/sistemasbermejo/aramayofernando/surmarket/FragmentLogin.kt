@@ -57,15 +57,15 @@ class FragmentLogin : Fragment() {
         var pw = ETXPassword.text.toString()
         if (!validateCredentials(us,pw))
         {
-            Toast.makeText(context,R.string.validationError, Toast.LENGTH_SHORT)
+            Toast.makeText(context,R.string.validationError, Toast.LENGTH_SHORT).show()
         }
         else if (verifyCredentials(us,pw))
         {
-            Toast.makeText(context,R.string.welcome, Toast.LENGTH_SHORT)
+            Toast.makeText(context,R.string.welcome, Toast.LENGTH_SHORT).show()
         }
         else
         {
-            Toast.makeText(context,R.string.wrongUserOrPassword, Toast.LENGTH_SHORT)
+            Toast.makeText(context,R.string.wrongUserOrPassword, Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -73,7 +73,7 @@ class FragmentLogin : Fragment() {
         var isCorrect= true
         if (us.isEmpty())
         {
-            ETXUser.error = R.string.userError.toString()
+            ETXUser.error = getString(R.string.userError)
             isCorrect = false
         }
         else
@@ -82,7 +82,7 @@ class FragmentLogin : Fragment() {
         }
         if (pw.isEmpty())
         {
-            ETXPassword.error = R.string.PasswordError.toString()
+            ETXPassword.error = getString(R.string.PasswordError)
             isCorrect = false
         }
         else

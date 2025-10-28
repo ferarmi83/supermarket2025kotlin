@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="@dimen/fontsizetitle"
-        android:layout_marginTop="@dimen/margin1"
+        android:layout_marginTop="@dimen/margininitial"
         android:text="@string/login" />
     <TextView
         android:layout_width="wrap_content"

@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "bo.edu.uajms.sistemasbermejo.aramayofernando.surmarket"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "bo.edu.uajms.sistemasbermejo.aramayofernando.surmarket"
