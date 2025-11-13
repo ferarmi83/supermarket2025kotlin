@@ -16,4 +16,6 @@
     <string name="PasswordError">Error de contraseña</string>
     <string name="welcome">Bienvenido a SuperMarket</string>
     <string name="wrongUserOrPassword">Usuario o Contraseña incorrecta</string>
+    <string name="appTitle">SurMarket</string>
+    <string name="shoppingcart">Carrito de compras</string>
 </resources>

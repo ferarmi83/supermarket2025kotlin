@@ -7,4 +7,13 @@
     <dimen name="padding1">8sp</dimen>
     <dimen name="margin2">8sp</dimen>
     <dimen name="margininitial">90sp</dimen>
+    <dimen name="TitleHeigth">54sp</dimen>
+    <dimen name="TitleElevation">2sp</dimen>
+    <dimen name="paddinghorizontal">6sp</dimen>
+    <dimen name="ImageButtonWidth">50sp</dimen>
+    <dimen name="ImageButtonHeigth">50sp</dimen>
+    <dimen name="padding2">4sp</dimen>
+    <dimen name="cardview_search_heigth">55sp</dimen>
+    <dimen name="cardview_border_radius">14sp</dimen>
+    <dimen name="cardview_border_radius2">30sp</dimen>
 </resources>
