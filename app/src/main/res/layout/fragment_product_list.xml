@@ -24,6 +24,7 @@
             android:textSize="@dimen/fontsizetitle"
             android:textStyle="bold"
             android:gravity="center_horizontal"
+            android:textColor="@color/black"
             />
         <ImageView
             android:layout_width="@dimen/ImageButtonWidth"
@@ -32,18 +33,18 @@
             android:focusable="true"
             android:contentDescription="@string/shoppingcart"
             android:padding="@dimen/padding2"
-            android:src="@drawable/ic_surmarket"
+            android:src="@drawable/ic_shopping_cart"
+            app:tint="@color/black"
             />
     </LinearLayout>
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/cardview_search_heigth"
         app:cardCornerRadius="@dimen/cardview_border_radius2"
         app:cardElevation="@dimen/cardview_default_elevation"
-        android:layout_marginBottom="@dimen/margin1"
-        app:cardBackgroundColor ="@color/white"
+        android:layout_marginTop="@dimen/margin1"
+        app:cardBackgroundColor ="@color/gray2"
+        android:layout_marginHorizontal="@dimen/margin1"
         >
     <LinearLayout
         android:orientation="horizontal"
@@ -59,7 +60,9 @@
             android:focusable="true"
             android:contentDescription="@string/shoppingcart"
             android:padding="@dimen/padding2"
-            android:src="@drawable/ic_surmarket"
+            android:src="@drawable/ic_search"
+            app:tint="@color/black"
+            android:layout_marginLeft="@dimen/margin2"
             />
         <EditText
             android:layout_width="0dp"
@@ -69,4 +72,25 @@
             />
     </LinearLayout>>
     </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/BTNAddNewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin1"
+        android:text="@string/addnewproduct"
+        android:textSize="@dimen/fontsizebutton"
+        android:background="@drawable/roundbutton"
+        android:textColorHint="@color/blue"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RCVProductList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_marginHorizontal="@dimen/margin1"
+        tools:listitem="@layout/item_product"
+        />
+
 </LinearLayout>

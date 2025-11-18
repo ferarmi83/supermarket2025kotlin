@@ -16,4 +16,7 @@
     <dimen name="cardview_search_heigth">55sp</dimen>
     <dimen name="cardview_border_radius">14sp</dimen>
     <dimen name="cardview_border_radius2">30sp</dimen>
+    <dimen name="margin3">4sp</dimen>
+    <dimen name="cardview_image_width">120sp</dimen>
+    <dimen name="cardview_text_size">16sp</dimen>
 </resources>

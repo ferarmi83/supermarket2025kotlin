@@ -18,4 +18,6 @@
     <string name="wrongUserOrPassword">Usuario o Contraseña incorrecta</string>
     <string name="appTitle">SurMarket</string>
     <string name="shoppingcart">Carrito de compras</string>
+    <string name="addnewproduct">Añadir nuevo producto</string>
+    <string name="buy">Comprar</string>
 </resources>
